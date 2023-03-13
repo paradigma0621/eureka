@@ -1,2 +1,2 @@
-# eureka
-Eureka microservice
+# Timeflow - Eureka
+Eureka microservice for Java 17
