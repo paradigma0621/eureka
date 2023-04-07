@@ -1,21 +1,8 @@
 spring:
   application:
-    name: eureka-server
+    name: eureka-java17
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
-
-server:
-  port: ${PORT:8761}
-
-eureka:
-  instance:
-    hostname: server1
-  server:
-    enableSelfPreservation: false
-    eviction-interval-timer-in-ms: 60000
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://server1/eureka/
+  config:
+    import: "optional:configserver:"
