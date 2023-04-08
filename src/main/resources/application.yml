@@ -1,6 +1,9 @@
 spring:
   application:
     name: eureka-java17
+  #cloud:
+    #config:
+      #uri: ${CONFIG_SERVER_URL:http://localhost:8888}
   config:
     import: "optional:configserver:"
 eureka:
